@@ -1,0 +1,45 @@
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto; /* 中央揃え */
+}
+
+/* aタグをボタンの見た目にスタイリング */
+.grid-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #00ff00; /* ボタンの背景色（例） */
+    color: black; /* 文字色 */
+    text-decoration: none; /* リンクの下線を消す */
+    border-radius: 4px; /* 角丸（お好みで） */
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* マウスホールド時の効果（お好みで） */
+.grid-btn:hover {
+    background-color: #00bb00;
+}
+
+img {
+    max-width: 100%; /* 画像の最大幅を親要素の100%に制限 */
+    height: auto;    /* 縦横比を維持したまま高さを自動調整 */
+}
+
+.under-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 12px 16px;
+}
