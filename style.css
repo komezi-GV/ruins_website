@@ -39,7 +39,7 @@ body {
 
 /* タイトル：MSP明朝 */
 .title {
-  font-family: "MS PMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 85px;
   font-weight: normal;
   letter-spacing: 0.15em;
@@ -89,7 +89,7 @@ body {
 
 /* ENTERリンク */
 .enter-link {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 20px;
   color: #ffffff;
   text-decoration: underline;
@@ -103,9 +103,9 @@ body {
   color: #aaaaaa;
 }
 
-/* コピーライト：UDP明朝 */
+/* コピーライト */
 .copyright {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 14px;
   color: #888888;
   letter-spacing: 0.05em;
@@ -113,18 +113,18 @@ body {
 }
 
 /* ===================================================
-   Menu ページ用スタイル (フォント: BIZ UD明朝 統一)
+   Menu ページ用スタイル (フォント: MS P明朝 統一)
    =================================================== */
 
 .menu-container {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   padding-top: 60px;
 }
 
 /* Menu タイトル */
 .menu-title {
   display: inline-block;
-  font-family: "BIZ UDPMincho", "BIZ UDMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 64px;
   font-weight: normal;
   letter-spacing: 0.05em;
@@ -146,7 +146,7 @@ body {
 }
 
 .menu-list a {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 20px;
   color: #ffffff;
   text-decoration: underline;
@@ -165,7 +165,7 @@ body {
 }
 
 .menu-back a {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 18px;
   color: #ffffff;
   text-decoration: underline;
@@ -190,7 +190,7 @@ body {
 }
 
 .link-free-text {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 13px;
   color: #999999;
   letter-spacing: 0.05em;
@@ -198,18 +198,18 @@ body {
 }
 
 /* ===================================================
-   Ruines ページ用スタイル (フォント: UDP明朝 統一)
+   Ruines ページ用スタイル (フォント: MS P明朝 統一)
    =================================================== */
 
 .ruines-container {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   padding-top: 60px;
 }
 
 /* Ruines タイトル（縦長引き延ばし） */
 .ruines-title {
   display: inline-block;
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 64px;
   font-weight: normal;
   letter-spacing: 0.2em;
@@ -243,7 +243,7 @@ body {
 }
 
 .ruines-column a {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 18px;
   color: #ffffff;
   text-decoration: underline;
@@ -262,7 +262,7 @@ body {
 }
 
 .ruines-back a {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 18px;
   color: #ffffff;
   text-decoration: underline;
@@ -270,11 +270,11 @@ body {
 }
 
 /* ===================================================
-   ギャラリー個別ページ用スタイル (UDP明朝 統一)
+   ギャラリー個別ページ用スタイル (フォント: MS P明朝 統一)
    =================================================== */
 
 .gallery-container {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   padding-top: 50px;
 }
 
@@ -286,7 +286,7 @@ body {
 }
 
 .gallery-title {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 38px;
   font-weight: normal;
   color: #dcdcdc;
@@ -309,7 +309,7 @@ body {
 
 /* ナビゲーションリンク (Back | Prev | Next) */
 .gallery-nav {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "MS PMincho", "MS 明朝", serif;
   font-size: 18px;
   letter-spacing: 0.05em;
   color: #ffffff;
