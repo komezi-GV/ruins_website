@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>S区Fビル - 廃墟巡礼</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="container" class="gallery-container">
+    <!-- タイトル（右上に配置） -->
+    <div class="gallery-header">
+      <h1 class="gallery-title">S区Fビル</h1>
+    </div>
+
+    <!-- 中央画像エリア -->
+    <div class="gallery-image-wrapper">
+      <img id="gallery-img" src="image/sf_building/01.png" alt="S区Fビル" class="gallery-image">
+    </div>
+
+    <!-- ナビゲーションリンク -->
+    <div class="gallery-nav">
+      <a href="javascript:void(0)" id="btn-back">Back</a>
+      <span class="nav-divider">|</span>
+      <a href="menu_ruines.html" id="btn-prev">Prev</a>
+      <span class="nav-divider">|</span>
+      <a href="javascript:void(0)" id="btn-next">Next</a>
+    </div>
+  </div>
+
+  <script>
+    // 表示する画像（image/施設フォルダ/連番.png）
+    const imageList = [
+      "image/sf_building/01.png",
+      "image/sf_building/02.png",
+      "image/sf_building/03.png"
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById("gallery-img");
+
+    // 前の画像へ (Back)
+    document.getElementById("btn-back").addEventListener("click", function() {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = imageList.length - 1;
+      }
+      imgElement.src = imageList[currentIndex];
+    });
+
+    // 次の画像へ (Next)
+    document.getElementById("btn-next").addEventListener("click", function() {
+      if (currentIndex < imageList.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      imgElement.src = imageList[currentIndex];
+    });
+  </script>
+</body>
+</html>

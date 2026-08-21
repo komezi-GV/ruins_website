@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>廃墟巡礼</title>
+  <!-- 7セグメントフォント (DSEG7) の読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dseg@0.46.0/css/dseg.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="container">
+    <!-- タイトル -->
+    <h1 class="title">廃墟巡礼</h1>
+
+    <!-- imageフォルダ内の画像を参照 -->
+    <div class="main-image-wrapper">
+      <img src="image/home.png" alt="廃墟" class="main-image" id="top-image">
+    </div>
+
+    <!-- 入場者カウンタ -->
+    <div class="counter-wrapper">
+      <div class="counter-box">
+        <span class="counter-digits" id="counter">000001</span>
+      </div>
+    </div>
+
+    <!-- 次のページへのリンク -->
+    <a href="menu1.html" class="enter-link">ENTER</a>
+
+    <!-- コピーライト -->
+    <div class="copyright">
+      Copuright© 2006 Pilgrimage to Ruins. All Rights Reserved.
+    </div>
+  </div>
+
+  <script>
+    // 簡易アクセスカウンタスクリプト（初期値: 1）
+    (function updateCounter() {
+      let count = localStorage.getItem('ruins_counter');
+      if (count === null) {
+        count = 1; // 初回アクセス時の値
+      } else {
+        count = parseInt(count, 10) + 1;
+      }
+      localStorage.setItem('ruins_counter', count);
+      
+      const formatted = String(count).padStart(6, '0');
+      document.getElementById('counter').innerText = formatted;
+    })();
+  </script>
+</body>
+</html>
