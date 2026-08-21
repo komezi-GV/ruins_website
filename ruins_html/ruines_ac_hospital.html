@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>A市C病院 - 廃墟巡礼</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div id="container" class="gallery-container">
+    <!-- タイトル（右上に配置） -->
+    <div class="gallery-header">
+      <h1 class="gallery-title">A市C病院</h1>
+    </div>
+
+    <!-- 中央画像エリア -->
+    <div class="gallery-image-wrapper">
+      <img id="gallery-img" src="../image/null/01.png" alt="A市C病院" class="gallery-image">
+    </div>
+
+    <!-- ナビゲーションリンク -->
+    <div class="gallery-nav">
+      <a href="../menu_ruines.html" id="btn-back">Back</a>
+      <span class="nav-divider">|</span>
+      <a href="javascript:void(0)" id="btn-prev">Prev</a>
+      <span class="nav-divider">|</span>
+      <a href="javascript:void(0)" id="btn-next">Next</a>
+    </div>
+  </div>
+
+  <script>
+    // フォルダ名と写真の総枚数を指定
+    const folderPath = "../image/null/";
+    const totalImages = 1; // 写真の合計枚数
+
+    // 01.png, 02.png ... のパスを自動生成
+    const imageList = [];
+    for (let i = 1; i <= totalImages; i++) {
+      const num = String(i).padStart(2, "0");
+      imageList.push(`${folderPath}${num}.png`);
+    }
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById("gallery-img");
+
+    // 前の画像を表示 (Prev)
+    document.getElementById("btn-prev").addEventListener("click", function() {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = imageList.length - 1; // 最初の画像で押した場合は最後の画像へ
+      }
+      imgElement.src = imageList[currentIndex];
+    });
+
+    // 次の画像を表示 (Next)
+    document.getElementById("btn-next").addEventListener("click", function() {
+      if (currentIndex < imageList.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0; // 最後の画像で押した場合は最初の画像へ
+      }
+      imgElement.src = imageList[currentIndex];
+    });
+  </script>
+</body>
+</html>
